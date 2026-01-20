@@ -1,22 +1,22 @@
 class Suntheme < Formula
   desc "Automatic theme switching for Ghostty and Neovim based on sunrise/sunset"
   homepage "https://github.com/lucianlavric/suntheme"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/lucianlavric/suntheme/releases/download/v#{version}/suntheme-aarch64-apple-darwin.tar.gz"
-      sha256 "e01c33790916488fee8fbf673539c91b71cf93e96feb308fcbbf6d1109d245b1"
+      sha256 "f652392353e44e49e234b30e702559c258ef4a25309dc2e94e2134bcac44859c"
     else
       url "https://github.com/lucianlavric/suntheme/releases/download/v#{version}/suntheme-x86_64-apple-darwin.tar.gz"
-      sha256 "199194103efe6ffcbfddffa44f0ef1a888720899451fa2975380f09407ad73e8"
+      sha256 "182e5104753ed1b32dd53d33967b25008971c7ad256e8b8632926a3c07d99fa6"
     end
   end
 
   on_linux do
     url "https://github.com/lucianlavric/suntheme/releases/download/v#{version}/suntheme-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "16077965b6475698c141d622316c9e9aea40a2afbb0876c5320433a06b7d9e0c"
+    sha256 "9f93eb3483b6bea9b26a1335022dc729afb1d300ab066267290c5fa0213bd5ee"
   end
 
   def install
